@@ -1,0 +1,232 @@
+#box {width: 100px;
+    height: 100px;
+    padding:10px;
+    text-align:center;
+    position:relative;
+    background-color:#aaeaea;
+    animation-name:slideRight;
+    animation-duration:3s;
+}
+
+@font-face {
+	font-family: 'Roddenberry';
+	src: url('Roddenberry.eot');
+	src: url('Roddenberry.eot?#iefix') format('embedded-opentype'),
+  url('Roddenberry.woff') format('woff'),
+	url('Roddenberry.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@keyframes slideRight{
+  from{left:0;
+  background-color:#aaeaea;}
+  to{left:144px;
+  background-color:#ddccea}
+}
+
+@keyframes play {
+    100% { background-position: -3240px; }
+}
+
+
+.trek {
+	font-family: 'Roddenberry';
+	text-transform: capitalize;
+	color:#333333;
+	font-weight: normal;
+	font-style: normal;
+  text-align: center;
+  font-size: 3rem;
+}
+
+#changingword {
+  color: red;
+  text-decoration: underline;
+  font-family: 'Roddenberry';
+  text-align: center;
+}
+
+.trek-title{
+	font-size: 4em;
+  font-family: 'Roddenberry';
+  text-align: center;
+  margin-top: 50px;
+
+}
+
+.trek-pixel {
+  width: 180px;
+  height: 340px;
+  margin: 0 auto;
+  background: url('trekers.png') left center;
+  animation: play 8s steps(18) infinite;
+}
+
+.phaser{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.setting{
+  font-size: 3rem;
+  color:#225599;
+  position: relative;
+  font-family: 'Roddenberry';
+}
+
+.bones{
+  margin-top: 100px;
+}
+
+h1 {
+    font-family: 'Poiret One', cursive; text-align:center; color:#00cc99; line-height: 1.6em;}
+
+h2 {
+    font-family: 'Poiret One', cursive; text-align:center; color:#00cccc; line-height: 1.6em;}
+
+h3,nav ul {
+    font-family: 'Poiret One', cursive; text-align:center; color:#99cc33;font-size: 1.2em;line-height: 1.6em;}
+
+p {
+    font-family: 'Poiret One', cursive;
+    text-align:center;
+    margin:10px;
+    color:#333;
+    line-height: 1.2em;
+    font-size: 1em;
+  }
+
+label {
+  font-style: normal;
+  text-align: center;
+  font-size: 1em;
+  position: relative;
+  display: inline-block;
+  width: 5em;
+  height: 1.5em;
+  -webkit-border-radius: 1.5em;
+  -moz-border-radius: 1.5em;
+  border-radius: 1.5em;
+  cursor: pointer;
+  background: #44dddd;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -ms-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+label:before {
+  font-style: normal;
+  text-align: center;
+  position: absolute;
+  left: 0.15em;
+  top: 0.15em;
+  width: 1.2em;
+  height: 1.2em;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #2299bf;
+  z-index: 2;
+  content: '';
+  -webkit-transition: left 0.3s;
+  -moz-transition: left 0.3s;
+  -ms-transition: left 0.3s;
+  -o-transition: left 0.3s;
+  transition: left 0.3s;
+}
+
+label:after {
+  top: 50%;
+  position: absolute;
+  left: 2em;
+  z-index: 1;
+  content: 'Stun';
+  color: #fff;
+  -webkit-transition: left 0.3s;
+  -moz-transition: left 0.3s;
+  -ms-transition: left 0.3s;
+  -o-transition: left 0.3s;
+  transition: left 0.3s;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+input {
+  display: none;
+  text-align:center;
+
+}
+
+input:checked + label {
+  background-color: #ee6655;
+}
+
+input:checked + label:before {
+  left: 3.65em;
+  background-color: #991144;
+}
+
+input:checked + label:after {
+  right: 2em;
+  content: 'Kill';
+}
+
+.redshirt, .redshirt span {
+	font-size: 5rem;
+	margin: 100px 0;
+ 	word-spacing: -24px;
+  text-align: center;
+  font-family: 'Roddenberry';
+	background: linear-gradient(0deg, #000 50%, #ff0000 50%, #ff0000 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.redshirt span{
+  position: relative;
+  top: 5px;
+
+  -webkit-animation: bounce .4s ease infinite alternate;
+
+}
+.redshirt span:nth-child(2) {
+  -webkit-animation-delay: .01s;
+}
+.redshirt span:nth-child(3) {
+  -webkit-animation-delay: .02s;
+}
+.redshirt span:nth-child(5) {
+  -webkit-animation-delay: .18s;
+}
+.redshirt span:nth-child(6) {
+  -webkit-animation-delay: .19s;
+}
+.redshirt span:nth-child(7) {
+  -webkit-animation-delay: .20s;
+}
+.redshirt span:nth-child(8) {
+  -webkit-animation-delay: .21s;
+}
+.redshirt span:nth-child(10) {
+  -webkit-animation-delay: .3s;
+}
+.redshirt span:nth-child(11) {
+  -webkit-animation-delay: .31s;
+}
+.redshirt span:nth-child(12) {
+  -webkit-animation-delay: .32s;
+}
+.redshirt span:nth-child(13) {
+  -webkit-animation-delay: .33s;
+}
+@-webkit-keyframes bounce {
+  100% {
+    top: -2px;
+
+  }
